@@ -10,9 +10,9 @@ winiso = Windows isochronous modifications by Joshua Blake <joshblake@gmail.com>
 
 1. Download pre-built binaries libusbx-winiso.zip from https://www.dropbox.com/s/madoye1ayaoajet/libusbx-winiso.zip
 2. Unzip into the depends folder such that the resulting folder structure ends up looking like:
-./depends/libusbx/
-./depends/libusbx/include/
-./depends/libusbx/MS64/
+./depends/libusb/
+./depends/libusb/include/libusb-1.0
+./depends/libusb/lib/
 3. Done
 
 = Ubuntu

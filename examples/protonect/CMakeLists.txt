@@ -64,6 +64,10 @@ if(APPLE)
   # libjpeg-turbo
   INCLUDE_DIRECTORIES("${MY_DIR}/../../depends/libjpeg_turbo/include/")
   LINK_DIRECTORIES("${MY_DIR}/../../depends/libjpeg_turbo/lib/")
+else()
+  # Windows needs to use libjpeg-turbo, too
+  INCLUDE_DIRECTORIES("${MY_DIR}/../../depends/libjpeg_turbo/include/")
+  LINK_DIRECTORIES("${MY_DIR}/../../depends/libjpeg_turbo/lib/")
 endif()
 
 SET(RESOURCES_INC_FILE "${MY_DIR}/src/resources.inc")
@@ -94,7 +98,7 @@ SET(SOURCES
 )
 
 SET(LIBRARIES
-  usb-1.0
+  libusb-1.0
   ${OpenCV_LIBS}
   turbojpeg
   ${LIBFREENECT2_THREADING_LIBRARIES}

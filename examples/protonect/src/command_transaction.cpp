@@ -59,6 +59,7 @@ void CommandTransaction::Result::deallocate()
   if (data != NULL)
   {
     delete[] data;
+    data = NULL;
   }
   length = 0;
   capacity = 0;
